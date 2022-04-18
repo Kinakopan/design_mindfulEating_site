@@ -15,7 +15,7 @@ const DispImage = styled.img`
 `;
 
 const List = styled.div`
-    text-align: right;
+    text-align: left;
 `;
 
 export default function ImgCard({
@@ -32,15 +32,14 @@ export default function ImgCard({
 
     return <CardCont cl={bg} text_cl={tcl} border_radius={bor}> 
         <h1>{title}</h1>
-        <DispImage src={img}/>
         <List>
-            <h2>{n1}</h2>
-            <h2>{n2}</h2> 
-            <h2>{n3}</h2> 
-            <h2>{n4}</h2> 
-        </List> 
+            <h2></h2>{n1} <br/>
+            <h2></h2>{n2} <br/>
+            <h2></h2>{n3} <br/>
+            <h2></h2>{n4} <br/>
+        </List>
+        <DispImage src={img}/>
         <p>{txt}</p>
-        {Children} 
-          
+        {Children}    
     </CardCont>
 }

@@ -33,14 +33,13 @@ export default function ImgCard({
     return <CardCont cl={bg} text_cl={tcl} border_radius={bor}> 
         <h1>{title}</h1>
         <DispImage src={img}/>
-        <List>
-            <h2>{n1}</h2>
-            <h2>{n2}</h2> 
-            <h2>{n3}</h2> 
-            <h2>{n4}</h2> 
-        </List> 
         <p>{txt}</p>
         {Children} 
-          
+        <List>
+            <h2>{n1}</h2> <br/>
+            <h2>{n2}</h2> <br/>
+            <h2>{n3}</h2> 
+            <h2>{n4}</h2> <br/>
+        </List>   
     </CardCont>
 }

@@ -14,18 +14,14 @@ const DispImage = styled.img`
     padding: 1em;
 `;
 
-const List = styled.div`
-    text-align: right;
-`;
 
 export default function ImgCard({
     img="/food1.png",
     bg="#E0E8FD",
     tcl="#08213E",
-    title="",
-    txt="",
+    title="This is title",
+    txt="main content",
     bor="",
-    n1,n2,n3,n4="",
     Children=null
 
 }){
@@ -33,14 +29,7 @@ export default function ImgCard({
     return <CardCont cl={bg} text_cl={tcl} border_radius={bor}> 
         <h1>{title}</h1>
         <DispImage src={img}/>
-        <List>
-            <h2>{n1}</h2>
-            <h2>{n2}</h2> 
-            <h2>{n3}</h2> 
-            <h2>{n4}</h2> 
-        </List> 
         <p>{txt}</p>
-        {Children} 
-          
+        {Children}    
     </CardCont>
 }

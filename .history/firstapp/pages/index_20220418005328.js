@@ -5,7 +5,6 @@ import Link from 'next/link';
 import ImgCard from '../comps/ImgCard'
 import Navbar from '../comps/Navbar'
 
-
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -30,8 +29,6 @@ export default function Home() {
       txt="Do you prepare, cook, and eat with a mindful mind? Choose one of the following three questions that suit you to help you with a better diet."
       />
 <br></br>
-
-    <h1>About us</h1>
       <ImgCard
         bor="20px"
         title="BCIT D3 Students, Set-C"

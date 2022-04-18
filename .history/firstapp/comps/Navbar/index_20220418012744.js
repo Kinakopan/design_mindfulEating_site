@@ -14,8 +14,8 @@ const Navbottom = styled.div`
 const Button = styled.button`
     background-image: url("${props=>props.icon}");
     background-size: 100%;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 20px; 
     border: none;
 `
