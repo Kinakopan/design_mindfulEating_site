@@ -5,7 +5,6 @@ import Link from 'next/link';
 import ImgCard from '../comps/ImgCard'
 import Navbar from '../comps/Navbar'
 
-
 export default function Home() {
   return (
     <div className={styles.container}>
