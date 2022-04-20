@@ -15,5 +15,11 @@ export default function TofuBox(){
     <div>
       <img src="" />
     </div>
+
+    <div>
+      <p>Get the fresh tofu at your local market</p>
+      <button src=""></button>
+    </div>
+
   </div>
 }

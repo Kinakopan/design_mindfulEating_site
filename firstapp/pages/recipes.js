@@ -6,7 +6,9 @@ export default function Recipes(){
     return (
     <div>
         <h1>Recipes</h1>
+
         <TofuBox />
+
         <RecipeCard 
             bg="#FDE8CA"/>
         <RecipeCard 
@@ -15,6 +17,7 @@ export default function Recipes(){
         />
         <RecipeCard />
         <RecipeCard />
+
         <Navbar />
     </div>
     )

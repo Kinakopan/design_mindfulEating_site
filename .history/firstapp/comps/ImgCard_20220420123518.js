@@ -4,8 +4,7 @@ import styled from 'styled-components';
 const CardCont = styled.div`
     background-color: ${props=>props.cl};
     color: ${props=>props.text_cl};  
-    min-width: 375px;
-    max-width: 500px;
+    width: 375px;
     padding: 1em 3em 1em 3em;
     border-radius: ${props=>props.border_radius}
 `;

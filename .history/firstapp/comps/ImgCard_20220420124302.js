@@ -31,7 +31,7 @@ export default function ImgCard({
 
 }){
 
-    return <CardCont cl={bg} text_cl={tcl} border_radius={bor}> 
+    return <CardCont cl={bg} text_cl={tcl} border_radius={bor} margin={mar}> 
         <h1>{title}</h1>
         <DispImage src={img}/>
         <List>
