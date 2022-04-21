@@ -8,6 +8,8 @@ width:350px;
 display:flex;
 top:${props=>props.top_prop}; 
 right:10px;
+padding-top:40px;
+margin:30px 0px 30px;
 `;
 
 const Image = styled.img`
