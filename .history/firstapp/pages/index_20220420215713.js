@@ -3,7 +3,6 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import ImgCard from '../comps/ImgCard';
 import Navbar from '../comps/Navbar';
-import Questions from '../comps/Questions';
 
 import { useRouter } from 'next/router';
 
@@ -33,23 +32,13 @@ export default function Home() {
       tcl="#000"
       txt="Do you prepare, cook, and eat with a mindful mind? Choose one of the following three questions that suit you to help you with a better diet."
       />
-
-    <br></br>
-
-      <Questions 
-      id="recipe" btName="want to cook" txt="I want to prepare healthy daily meals but don’t know what to cook" id2="restaurant" btName2="dont want to cook" txt2="I want to go vegan easily and healthfully but don’t want to cook"
-      id3="localFood" btName3="want to buy" txt3="I want to buy organic ingredients but don't know where"></Questions>
-
-
+<br></br>
 
     <h1>About us</h1>
-
       <ImgCard
         bor="20px"
-        mar="2rem"
         title="BCIT D3 Students, Set-C"
-        img="/about_us.png"
-        marg="0 0 0 -4em"
+        img=""
         n1="Hazel Wang"
         n2="Mio Takagi"
         n3="Minyoung Bae"
@@ -57,7 +46,13 @@ export default function Home() {
         txt="There are various ways to keep the health of the Earth sustainable while protecting our health. However, instead of suddenly stopping us from eating meat, we created this website to suggest a delicious and easy way to practice."
       />
 
+
+     
+
       <Navbar></Navbar>
+
+      <Link href="/quiz">Go to Quiz</Link>
+      <Link href="/recipes">Go to Recipes</Link>
         
       </main>
     </div>

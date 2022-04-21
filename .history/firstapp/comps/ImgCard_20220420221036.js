@@ -1,6 +1,5 @@
 import { Children } from 'react';
 import styled from 'styled-components';
-import rcont from './RestaurantCard';
 
 const CardCont = styled.div`
     background-color: ${props=>props.cl};
@@ -15,7 +14,6 @@ const CardCont = styled.div`
 const DispImage = styled.img`
     width: 100%;
     padding: 1em;
-    margin: ${props=>props.image_margin};
 `;
 
 const List = styled.div`
@@ -31,15 +29,13 @@ export default function ImgCard({
     bor="",
     mar="",
     n1,n2,n3,n4="",
-    marg="",
     Children=null
 
 }){
 
     return <CardCont cl={bg} text_cl={tcl} border_radius={bor} margin={mar}> 
         <h1>{title}</h1>
-        <DispImage src={img} image_margin={marg}/>
-        <br/>
+        <DispImage src={img}/>
         <List>
             <h2>{n1}</h2>
             <h2>{n2}</h2> 

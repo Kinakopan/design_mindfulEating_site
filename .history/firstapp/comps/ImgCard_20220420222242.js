@@ -1,6 +1,5 @@
 import { Children } from 'react';
 import styled from 'styled-components';
-import rcont from './RestaurantCard';
 
 const CardCont = styled.div`
     background-color: ${props=>props.cl};

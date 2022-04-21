@@ -3,7 +3,6 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import ImgCard from '../comps/ImgCard';
 import Navbar from '../comps/Navbar';
-import Questions from '../comps/Questions';
 
 import { useRouter } from 'next/router';
 
@@ -33,14 +32,7 @@ export default function Home() {
       tcl="#000"
       txt="Do you prepare, cook, and eat with a mindful mind? Choose one of the following three questions that suit you to help you with a better diet."
       />
-
-    <br></br>
-
-      <Questions 
-      id="recipe" btName="want to cook" txt="I want to prepare healthy daily meals but don’t know what to cook" id2="restaurant" btName2="dont want to cook" txt2="I want to go vegan easily and healthfully but don’t want to cook"
-      id3="localFood" btName3="want to buy" txt3="I want to buy organic ingredients but don't know where"></Questions>
-
-
+<br></br>
 
     <h1>About us</h1>
 

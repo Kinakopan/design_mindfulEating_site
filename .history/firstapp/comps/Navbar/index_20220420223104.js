@@ -10,7 +10,7 @@ const NavBottom = styled.div`
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    padding: 1em;
+    padding-bottom: 1em;
     background-color: white;
 `;
 
@@ -20,6 +20,7 @@ const Button = styled.button`
     background-size: 100% 100%;
     width: 40px;
     height: 40px;
+    
     border: none;
 `
 
