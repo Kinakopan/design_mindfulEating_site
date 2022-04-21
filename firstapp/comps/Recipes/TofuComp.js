@@ -6,6 +6,7 @@ font-family: 'm plus 1', sans-serif;
 display: flex;
 flex-direction: column;
 align-items:end;
+margin: 10px;
 `;
 
 const IntroBox = styled.span`
@@ -24,7 +25,7 @@ top:310px;
 height:250px;
 width:250px;
 margin-top: -20px;
-margin-right: 50px;
+margin-right: 80px;
 `;
 
 const LinkBox = styled(StyledTofuComp)`
