@@ -24,7 +24,7 @@ const Button = styled.button`
 export default function Navbar(){
 
     return <NavBottom>
-        <Button icon="/Logo/Logo_recipe.png"/>
+        <Button icon="/Logo/Logo_restaurant.png"/>
         <Button icon="/Logo/Logo_restaurant.png"/>
         <Button icon="/Logo/Logo_localFood.png"/>
     </NavBottom>

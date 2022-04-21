@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-const NavBottom = styled.div`
+const Navbottom = styled.div`
     width: 100vw;
     height: 110px;
     display: flex;
@@ -13,7 +13,7 @@ const NavBottom = styled.div`
 
 const Button = styled.button`
     background-image: url("${props=>props.icon}");
-    background-size: 100% 100%;
+    background-size: 100%;
     width: 80px;
     height: 80px;
     border-radius: 20px; 
@@ -23,9 +23,9 @@ const Button = styled.button`
 
 export default function Navbar(){
 
-    return <NavBottom>
-        <Button icon="/Logo/Logo_recipe.png"/>
-        <Button icon="/Logo/Logo_restaurant.png"/>
-        <Button icon="/Logo/Logo_localFood.png"/>
-    </NavBottom>
+    return <Navbottom>
+        <Button icon="/Logo_recipe"/>
+        <Button icon="/Logo_restaurant"/>
+        <Button icon="/Logo_localFood"/>
+    </Navbottom>
 }

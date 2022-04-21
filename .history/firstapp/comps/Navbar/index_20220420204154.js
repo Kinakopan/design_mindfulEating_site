@@ -12,8 +12,8 @@ const NavBottom = styled.div`
 `;
 
 const Button = styled.button`
-    background-image: url("${props=>props.icon}");
-    background-size: 100% 100%;
+    
+    background-size: 100%;
     width: 80px;
     height: 80px;
     border-radius: 20px; 
@@ -24,7 +24,7 @@ const Button = styled.button`
 export default function Navbar(){
 
     return <NavBottom>
-        <Button icon="/Logo/Logo_recipe.png"/>
+        <Button background-image="/Logo/Logo_restaurant.png"/>
         <Button icon="/Logo/Logo_restaurant.png"/>
         <Button icon="/Logo/Logo_localFood.png"/>
     </NavBottom>
