@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import { useRouter } from 'next/router';
 
 const Cont = styled.form`
   background-color: #E0E8FD;
@@ -31,12 +30,10 @@ const Button = styled.button`
 export default function Questions({
   txt="", txt2="", txt3="",
   id="", id2="", id3="",
+  
+  
 }){
 
-   const r = useRouter();
-   var {qnum} = r.query;
-
-   
   return <Cont>
     <div>
     <input type="radio" id={id} name="radio button" value={txt}/>
@@ -59,7 +56,7 @@ export default function Questions({
     </div>
 
     <br /> 
-    <Button type='submit'>G o</Button>
+    <Button type='submit'>Go</Button>
 
   
   </Cont>

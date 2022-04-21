@@ -32,7 +32,7 @@ export default function ImgCard({
     mar="",
     n1,n2,n3,n4="",
     marg="",
-    cpa="1em 3em 1em 3em",
+    cpa="1em 3em 1em 3em"
     Children=null
 
 }){
