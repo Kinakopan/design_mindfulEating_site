@@ -21,7 +21,7 @@ export default function Questions({
   txt="", txt2="", txt3="",
   id="", id2="", id3="",
   
-
+  
 }){
 
   return <Cont>
@@ -44,6 +44,8 @@ export default function Questions({
     <input type="radio" id={id3} name="radio button" value={txt3}/>
     <label for={id3}>{txt3}</label>
     </div>
+
+    <button type='submit'></button>
 
   
   </Cont>
