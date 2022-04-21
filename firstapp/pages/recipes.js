@@ -8,9 +8,10 @@ const StyledRecipes = styled.div`
 
 `;
 
-const BgChange = styled.span`
-background-color:#E0E8FD;
-margin:30px;
+const BgChange = styled.div`
+background-color: #E0E8FD;
+display: block;
+height: 120vh;
 `;
 
 

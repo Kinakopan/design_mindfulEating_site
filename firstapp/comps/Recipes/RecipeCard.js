@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
+font-family: 'm plus 1', sans-serif;
 color:${props=>props.text_color};
 height:150px;
 width:350px;
-position:absolute;
+display:flex;
 top:${props=>props.top_prop}; 
 right:10px;
 margin:30px 0px 30px;
-font-family: 'm plus 1', sans-serif;
-
 `;
 
 const Image = styled.img`
@@ -20,10 +19,10 @@ border-radius:20px 0px 0px 20px;
 `;
 
 const ColumR = styled.span`
-position:absolute;
 float:right;
 width:60%;
 right:0px;
+margin-left:20px;
 `
 
 const Title = styled.p`
