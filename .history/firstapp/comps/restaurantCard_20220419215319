@@ -1,0 +1,11 @@
+
+
+export default function RestaurantCard({
+    img="/veg out.png",
+    bg="white",
+
+
+}){
+
+    
+}
