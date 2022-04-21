@@ -1,0 +1,10 @@
+import { Children } from 'react';
+import styled from 'styled-components';
+
+const CardCont = styled.div`
+    background-color: ${props=>props.cl};
+    color: ${props=>props.text_cl};  
+    width: 500px;
+    padding: 1em 3em 1em 3em;
+    border-radius: ${props=>props.border_radius}
+`;
