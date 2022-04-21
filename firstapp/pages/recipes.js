@@ -12,6 +12,9 @@ const BgChange = styled.div`
 background-color: #E0E8FD;
 display: block;
 height: 120vh;
+display:flex;
+flex-direction:column;
+align-items:end;
 `;
 
 

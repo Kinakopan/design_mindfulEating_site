@@ -47,8 +47,8 @@ color:#A2B0D3;
 
 const CartBtn = styled.img`
 top:310px;
-height:45px;
-width:45px;
+height:35px;
+width:35px;
 `
 
 const Mark = styled.a`
