@@ -1,31 +1,38 @@
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
-background-color:${props=>props.color}; 
 color:${props=>props.text_color};
 height:150px;
 width:350px;
-dispaly:inline-block;
+position:absolute;
+top:${props=>props.top_prop}; 
+right:10px;
+margin:30px 0px 30px;
+font-family: 'm plus 1', sans-serif;
+
 `;
 
 const Image = styled.img`
-display:flex;
-background-color:${props=>props.color}; 
-color:${props=>props.text_color};
+float:left;
 height:150px;
 width:35%;
+border-radius:20px 0px 0px 20px;
 `;
 
-const Title = styled.h2`
-display:flex;
+const ColumR = styled.span`
+position:absolute;
+float:right;
+width:60%;
+right:0px;
+`
+
+const Title = styled.p`
 color:${props=>props.text_color};
-font-family: M PLUS 1;
+font-family: 'm plus 1', sans-serif;
 font-size:20px;
-width:75%;
 `;
 
-const Para = styled.p`
-display:flex;
+const Para = styled(Title)`
 font-size:16px;
 `
 
@@ -35,13 +42,18 @@ export default function RecipeCard({
   img="/recipes1.png", 
   tcl="#08213E",
   title="Tofu Banh Mi",
-  paragraph="Vietnamese sandwich made of baguette."
+  paragraph="Vietnamese sandwich made of baguette.",
+  top="620px"
 }){
 
-  return <StyledCard text_color={tcl}>
+  return <StyledCard text_color={tcl} top_prop={top}>
     <Image src={img} />
-    <Title>{title}</Title>
-    <Para>{paragraph}</Para>
+
+    <ColumR>
+      <Title>{title}</Title>
+      <Para>{paragraph}</Para>
+    </ColumR>
+    
   </StyledCard>
 
 }
