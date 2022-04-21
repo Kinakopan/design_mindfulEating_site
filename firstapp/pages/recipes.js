@@ -38,7 +38,7 @@ export default function Recipes(){
             <RecipeCard 
             img="/recipes3.png"
             title="Tofu Cutlet Curry"
-            paragraph="Korean food with various vegetables mixed with rice."
+            paragraph="Japanese curry that goes well with tofu cutlets."
             top="1020px"
             />
 
@@ -49,6 +49,8 @@ export default function Recipes(){
             top="1220px"
             />   
         </BgChange>
+
+    <Navbar />
         
     </StyledRecipes>
     )
