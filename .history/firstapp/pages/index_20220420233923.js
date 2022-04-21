@@ -42,7 +42,7 @@ export default function Home() {
 
 
 
-    <h1>About us</h1>
+    <h1> About us</h1>
 
       <ImgCard
         bor="20px"

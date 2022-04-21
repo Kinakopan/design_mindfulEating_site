@@ -10,16 +10,16 @@ const NavBottom = styled.div`
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    padding: 1em;
+    padding-bottom: 1em;
     background-color: white;
 `;
 
 const Button = styled.button`
     background-image: url("${props=>props.icon}");
-    background-color: white;
     background-size: 100% 100%;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px; 
     border: none;
 `
 
@@ -32,10 +32,10 @@ export default function Navbar(){
         <Button icon="/Logo/logo1.png" onClick = {
             ()=>r.push("/recipes")
         }></Button>
-        <Button icon="/Logo/logo2.png" onClick = {
+        <Button icon="/Logo/Logo_restaurant.png" onClick = {
             ()=>r.push("/quiz")
         }></Button>
-        <Button icon="/Logo/logo3.png" onClick = {
+        <Button icon="/Logo/Logo_localFood.png" onClick = {
             ()=>r.push("/recipes")
         }></Button>
     </NavBottom>
