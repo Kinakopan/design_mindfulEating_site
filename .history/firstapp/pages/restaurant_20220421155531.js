@@ -8,7 +8,7 @@ import Navbar from '../comps/Navbar';
 export default function Restaurant(){
     
     return ( 
-    <div className={styles.container}>
+    <div className={styles.rediv}>
         <h1>Restaurant</h1>
 
         <ImgCard 

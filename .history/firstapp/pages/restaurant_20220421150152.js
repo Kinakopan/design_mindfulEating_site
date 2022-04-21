@@ -1,14 +1,13 @@
 import ImgCard from "../comps/ImgCard";
 import RestaurantCard from "../comps/RestaurantCard";
 import styles from "../styles/Home.module.css";
-import Navbar from '../comps/Navbar';
 
 
 
 export default function Restaurant(){
     
     return ( 
-    <div className={styles.container}>
+    <div className={styles.rediv}>
         <h1>Restaurant</h1>
 
         <ImgCard 
@@ -47,9 +46,6 @@ export default function Restaurant(){
             h2="Tama Organic Life"
             txt="Organic shop selling fresh produce and Japanese specialty items. Its kitchen makes takeaway hot vegan lunch boxes, wraps and sandwiches."
         ></RestaurantCard>
-        <br></br>
-
-        <Navbar></Navbar>
         
 
     </main>
