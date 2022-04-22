@@ -1,19 +1,20 @@
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 
-const StyledCard = styled.div`
+const StyledCard = styled.li`
     display:flex;
     flex-direction:column;
     color:${props=>props.text_color};
+    background:#E0E8FD;
     height:auto;
-    width:100%;
+    width:300px;
     font-family: 'm plus 1', sans-serif;
-    border-radius: 20px 0 0 20px;
-    overflow: hidden;
 `;
 
 const ImgBox = styled.div`
-    height: 300px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
 `;
 
 const Img = styled.img`
@@ -25,44 +26,44 @@ const Img = styled.img`
 const TxtBox = styled.div`
     display:flex;
     flex-direction: column;
-    background:#fff;
     padding: 20px;
     align-items:end;
 `;
 
-const CardTtl = styled.h2`
+const ItemTtl = styled.h3`
     color:${props=>props.text_color};
     font-family: 'm plus 1', sans-serif;
     font-size:24px;
     width:100%;
 `;
 
-const Txt = styled.p`
-    color:${props=>props.text_color};
+const ItemUrl = styled.h4`
     font-family: 'm plus 1', sans-serif;
     font-size:16px;
+    width:100%;
+    font-style:italic;
 `;
 
-const Btn = styled.button`
-    color: #fff;
-    font-family: 'm plus 1',sans-serif;
-    background: #ef7f63;
-    border: none;
-    border-radius: 8px;
-    width: 70px;
-    font-size: 16px;
-    padding: 10px 0;
+const ItemHeading = styled.h4`
+    font-family: 'm plus 1', sans-serif;
+    font-size:16px;
+    width:100%;
+    font-weight:bold;
 `;
 
+const ItemTxt = styled.p`
+    font-family: 'm plus 1', sans-serif;
+    font-size:16px;
+    width:100%;
+`;
 
-
-export default function Local_card({
+export default function Local_detail_item({
     img="/recipes1.png",
     tcl="#08213E",
-    cardttl="1. Pickup / Delivery",
-    paragraph="Services you can subscribe to pickup or get delivered local dish/food",
-    btntxt="MORE",
-    path="/pickup"
+    itemttl="1. Uber Eats",
+    itemurl="https://www.ubereats.com/ca/category/vancouver-bc/vegan",
+    itemheading="ー　Vegan Category",
+    itemtxt="There is a Vegan category"
 }){
 
     const r = useRouter();
@@ -74,14 +75,10 @@ export default function Local_card({
     </ImgBox>
 
     <TxtBox>
-      <CardTtl>{cardttl}</CardTtl>
-      <Txt>{paragraph}</Txt>
-      <Btn onClick={
-        ()=>r.push({
-          pathname:"/localfood/localfood" + String(path)
-        })
-        }
-      >{btntxt}</Btn>
+      <ItemTtl>{itemttl}</ItemTtl>
+      <ItemUrl>{itemurl}</ItemUrl>
+      <ItemHeading>{itemheading}</ItemHeading>
+      <ItemTxt>{itemtxt}</ItemTxt>
     </TxtBox>
 
   </StyledCard>

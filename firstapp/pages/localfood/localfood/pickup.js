@@ -1,21 +1,24 @@
 import Navbar from "../../../comps/Navbar";
-import LocalCard from "../../../comps/Localfood/LocalCard";
+import Local_detail_top from "../../../comps/Localfood/LocalDetails";
+import Local_detail_item from "../../../comps/Localfood/LocalDetailItem";
 import styled from 'styled-components';
 
-const StyledRecipes = styled.div`
-    background-color:#E0E8FD;
+const LocalWrap = styled.div`
+    background-color:#fff;
     display: flex;
     flex-direction: column;
     align-items: end;
+    overflow:hidden;
 `;
 
-const LocalCardCont = styled.div`
+const LocalDetailItemCont = styled.ul`
     display:flex;
     align-items:end;
     justify-content:end;
     flex-direction:column;
     gap: 60px;
-    width:300px;
+    width:100%;
+    background:#E0E8FD;
 `;
 
 const HowToCatTtl = styled.h1`
@@ -30,21 +33,24 @@ const LocalPageTtl = styled.h2`
 
 export default function LocalFood(){
     return (
-    <StyledRecipes>
+    <LocalWrap>
         {/* <BgChange> */}
 
         <HowToCatTtl>Local Food</HowToCatTtl>
 
-        <LocalCardCont>
-        <LocalPageTtl>testing</LocalPageTtl>
-            <LocalCard
+        <Local_detail_top
                 img="/localfood/picup.jpg"
                 title="1. Pickup / Delivery"
                 paragraph="Services you can subscribe to pickup or get delivered local dish/food"
             />
 
-        </LocalCardCont>
+        <LocalDetailItemCont>
+            <Local_detail_item>
+            </Local_detail_item>
+
+        </LocalDetailItemCont>
+
         <Navbar></Navbar>
-    </StyledRecipes>
+    </LocalWrap>
     )
 }
