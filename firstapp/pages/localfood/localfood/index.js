@@ -1,8 +1,8 @@
 import Navbar from "../../../comps/Navbar";
-import LocalCard from "../../../comps/Localfood/LocalCard";
+import Local_card from "../../../comps/Localfood/LocalCard";
 import styled from 'styled-components';
 
-const StyledRecipes = styled.div`
+const LocalWrap = styled.div`
     background-color:#E0E8FD;
     display: flex;
     flex-direction: column;
@@ -29,42 +29,42 @@ const LocalPageTtl = styled.h2`
 
 export default function LocalFood(){
     return (
-    <StyledRecipes>
+    <LocalWrap>
         {/* <BgChange> */}
 
         <HowToCatTtl>Local Food</HowToCatTtl>
 
         <LocalCardCont>
         <LocalPageTtl>5 ways of how to find local food</LocalPageTtl>
-            <LocalCard
+            <Local_card
                 img="/localfood/picup.jpg"
                 title="1. Pickup / Delivery"
                 paragraph="Services you can subscribe to pickup or get delivered local dish/food"
                 path="/pickup"
             />
 
-            <LocalCard
+            <Local_card
                 img="/localfood/farmersMarkets.jpg"
                 title="2. Farmers&#39; Markets (VFM)"
                 paragraph="Farmers markets in Vancouver where you can buy local food"
                 path="/farmersMarket"
             />
 
-            <LocalCard
+            <Local_card
                 img="/localfood/grocerystore.jpg"
                 title="3. Grocery Stores &amp; Markets"
                 paragraph="Grocery stores &amp; markets in Vancouver where you can buy local food."
                 path="/groceryStore"
             />
 
-            <LocalCard
+            <Local_card
                 img="/localfood/seafood.jpg"
                 title="4. Local Seafood"
                 paragraph="Places in Vancouver where you can buy local seafood"
                 path="/seafood"
             />
 
-            <LocalCard
+            <Local_card
                 img="/localfood/farmToTable.jpg"
                 title="5. Farm-to-Table"
                 paragraph="Farm-to-table restaurants in Vancouver"
@@ -72,6 +72,6 @@ export default function LocalFood(){
             />
         </LocalCardCont>
         <Navbar></Navbar>
-    </StyledRecipes>
+    </LocalWrap>
     )
 }
