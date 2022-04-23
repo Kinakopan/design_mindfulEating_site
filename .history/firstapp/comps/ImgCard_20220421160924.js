@@ -1,6 +1,6 @@
 import { Children } from 'react';
 import styled from 'styled-components';
-
+import rcont from './RestaurantCard';
 
 const CardCont = styled.div`
     background-color: ${props=>props.cl};
@@ -21,7 +21,7 @@ const List = styled.div`
 `;
 
 export default function ImgCard({
-    img="",
+    img="/food1.png",
     bg="#E0E8FD",
     tcl="#08213E",
     title="",

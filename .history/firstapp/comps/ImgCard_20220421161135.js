@@ -21,7 +21,7 @@ const List = styled.div`
 `;
 
 export default function ImgCard({
-    img="",
+    img="/food1.png",
     bg="#E0E8FD",
     tcl="#08213E",
     title="",
