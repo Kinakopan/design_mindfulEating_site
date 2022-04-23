@@ -36,7 +36,7 @@ export default function Navbar(){
             ()=>r.push("/restaurant")
         }></Button>
         <Button icon="/Logo/logo3.png" onClick = {
-            ()=>r.push("/recipes")
+            ()=>r.push("/localfood/localfood")
         }></Button>
     </NavBottom>
 }

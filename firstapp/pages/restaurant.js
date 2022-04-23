@@ -1,5 +1,7 @@
 import ImgCard from "../comps/ImgCard";
 import RestaurantCard from "../comps/RestaurantCard";
+import SideNav from "../comps/Navbar/SideNav";
+import Navbar from "../comps/Navbar";
 
 
 
@@ -8,6 +10,15 @@ export default function Restaurant(){
     return ( 
     <div>
         <h1>Restaurant</h1>
+
+        <SideNav 
+        bcl="#A2B0D3"
+        index1="Tofu"
+        index2="Beans"
+        index3="Grains"
+        index4="Quinoa"
+        address1="/restaurant"
+        ></SideNav>
 
         <ImgCard 
         img="/restaurant.png"
@@ -42,6 +53,9 @@ export default function Restaurant(){
             txt="Organic shop selling fresh produce and Japanese specialty items. Its kitchen makes takeaway hot vegan lunch boxes, wraps and sandwiches."
         ></RestaurantCard>
         
+        <br/>
+
+        <Navbar></Navbar>
 
     </main>
     </div>
