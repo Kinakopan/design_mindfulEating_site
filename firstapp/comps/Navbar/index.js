@@ -12,6 +12,7 @@ const NavBottom = styled.div`
     margin-top: 20px;
     padding: 1em;
     background-color: white;
+    z-index: 101;
 `;
 
 const Button = styled.button`

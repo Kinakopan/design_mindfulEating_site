@@ -30,7 +30,6 @@ export default function Recipes(){
         index2="Beans"
         index3="Grains"
         index4="Quinoa"
-        address1="/restaurant"
         ></SideNav>
 
         <TofuComp />
