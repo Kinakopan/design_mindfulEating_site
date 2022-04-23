@@ -19,6 +19,7 @@ const LocalDetailItemCont = styled.ul`
     gap: 60px;
     width:100%;
     background:#E0E8FD;
+    padding:0;
 `;
 
 const HowToCatTtl = styled.h1`
@@ -45,8 +46,25 @@ export default function LocalFood(){
             />
 
         <LocalDetailItemCont>
-            <Local_detail_item>
-            </Local_detail_item>
+            <Local_detail_item/>
+
+            <Local_detail_item
+                img="/recipes1.png"
+                bgc="#fff"
+                itemttl="2. Bee My Guest"
+                itemurl="https://www.beemyguest.ca/"
+                itemheading="ー　Who they are "
+                itemtxt="They are two University of British Columbia students who have recently graduated. They are united by a love of plant-based food and the creation of community. Bee My Guest hopes to broaden the sharing economy to include more local and small-business food entrepreneurs, while also considering the environmental impacts of food production."
+            />
+
+            <Local_detail_item
+                img="/recipes1.png"
+                bgc="#fff"
+                itemttl="3. Planted Meals"
+                itemurl="https://www.plantedmeals.ca/"
+                itemheading="ー　Who they are"
+                itemtxt="They recognised the need for wholesome, tasty food that was delivered on a regular basis to ensure food availability—while also not breaking the bank.Their head chef is a vegan who creates menus free of animal products. Whether you're a vegan or not, their focus on cosy, home-style meals is delicious, and you won't miss the meat! By not supporting animal agriculture, which is one of the leading causes of greenhouse gas emissions and a strain on our natural resources, eating vegan drastically reduces your carbon footprint."
+            />
 
         </LocalDetailItemCont>
 
