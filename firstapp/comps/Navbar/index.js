@@ -12,6 +12,7 @@ const NavBottom = styled.div`
     margin-top: 20px;
     padding: 1em;
     background-color: white;
+    z-index: 101;
 `;
 
 const Button = styled.button`
@@ -36,7 +37,7 @@ export default function Navbar(){
             ()=>r.push("/restaurant")
         }></Button>
         <Button icon="/Logo/logo3.png" onClick = {
-            ()=>r.push("/recipes")
+            ()=>r.push("/localfood/localfood")
         }></Button>
     </NavBottom>
 }
