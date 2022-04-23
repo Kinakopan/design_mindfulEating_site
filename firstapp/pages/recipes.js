@@ -8,9 +8,13 @@ const StyledRecipes = styled.div`
 
 `;
 
-const BgChange = styled.span`
-background-color:#E0E8FD;
-margin:30px;
+const BgChange = styled.div`
+background-color: #E0E8FD;
+display: block;
+height: 120vh;
+display:flex;
+flex-direction:column;
+align-items:end;
 `;
 
 
@@ -34,7 +38,7 @@ export default function Recipes(){
             <RecipeCard 
             img="/recipes3.png"
             title="Tofu Cutlet Curry"
-            paragraph="Korean food with various vegetables mixed with rice."
+            paragraph="Japanese curry that goes well with tofu cutlets."
             top="1020px"
             />
 
@@ -45,6 +49,8 @@ export default function Recipes(){
             top="1220px"
             />   
         </BgChange>
+
+    <Navbar />
         
     </StyledRecipes>
     )
