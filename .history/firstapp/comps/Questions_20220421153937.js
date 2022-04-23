@@ -34,6 +34,7 @@ export default function Questions({
 }){
 
    const r = useRouter();
+   var {qnum} = r.query;
 
    
   return <Cont>
@@ -46,10 +47,7 @@ export default function Questions({
     <br/>
 
     <div>
-    <input type="radio" id={id2} name="radio button" value={txt2} onClick =  
-    {
-      ()=>r.push("/restaurant")
-    }/>
+    <input type="radio" id={id2} name="radio button" value={txt2}/>
     <label for={id2}>{txt2}</label>
     </div>
 

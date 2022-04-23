@@ -35,7 +35,9 @@ export default function Home() {
       />
 
     <br></br>
-      <h1>Today, I want...</h1>
+      <ImgCard
+      title="Today, I want..."
+      >
       <Questions
        id="recipe" 
        btName="want to cook" 
@@ -47,7 +49,7 @@ export default function Home() {
       btName3="want to buy" 
       txt3="I want to buy organic ingredients but don't know where"
       ></Questions>
-  
+    </ImgCard>
 
     <h1>About us</h1>
 
