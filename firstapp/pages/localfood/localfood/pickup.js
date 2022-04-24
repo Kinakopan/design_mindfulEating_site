@@ -4,7 +4,7 @@ import Local_detail_item from "../../../comps/Localfood/LocalDetailItem";
 import styled from 'styled-components';
 
 const LocalWrap = styled.div`
-    background-color:#fff;
+    background:#fff;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -40,16 +40,22 @@ export default function LocalFood(){
         <HowToCatTtl>Local Food</HowToCatTtl>
 
         <Local_detail_top
-                img="/localfood/picup.jpg"
-                title="1. Pickup / Delivery"
-                paragraph="Services you can subscribe to pickup or get delivered local dish/food"
+                img="/localfood/pickup.jpg"
+                pagettl="1. Pickup / Delivery"
+                descTxt="Services you can subscribe to pickup or get delivered local dish/food"
             />
 
         <LocalDetailItemCont>
-            <Local_detail_item/>
+            <Local_detail_item
+                img="/localfood/1_local_food/ubereats.jpg"
+                itemttl="1. Uber Eats"
+                itemurl="https://www.ubereats.com/ca/category/vancouver-bc/vegan"
+                itemheading="ー　Vegan Category"
+                itemtxt="There is a Vegan category"
+            />
 
             <Local_detail_item
-                img="/recipes1.png"
+                img="/localfood/1_local_food/beMyGuest.jpg"
                 bgc="#fff"
                 itemttl="2. Bee My Guest"
                 itemurl="https://www.beemyguest.ca/"
@@ -58,8 +64,7 @@ export default function LocalFood(){
             />
 
             <Local_detail_item
-                img="/recipes1.png"
-                bgc="#fff"
+                img="/localfood/1_local_food/plantedMeals.jpg"
                 itemttl="3. Planted Meals"
                 itemurl="https://www.plantedmeals.ca/"
                 itemheading="ー　Who they are"

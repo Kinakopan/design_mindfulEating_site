@@ -1,21 +1,25 @@
 import Navbar from "../../../comps/Navbar";
-import LocalCard from "../../../comps/Localfood/LocalCard";
+import Local_relatedpage_top from "../../../comps/Localfood/LocalRelatedpageTop";
+import Local_detail_item from "../../../comps/Localfood/LocalDetailItem";
 import styled from 'styled-components';
 
-const StyledRecipes = styled.div`
-    background-color:#E0E8FD;
+const LocalWrap = styled.div`
+    background:#E0E8FD;
     display: flex;
     flex-direction: column;
     align-items: end;
+    overflow:hidden;
 `;
 
-const LocalCardCont = styled.div`
+const LocalDetailItemCont = styled.ul`
     display:flex;
     align-items:end;
     justify-content:end;
     flex-direction:column;
     gap: 60px;
-    width:300px;
+    width:100%;
+    background:#E0E8FD;
+    padding:0;
 `;
 
 const HowToCatTtl = styled.h1`
@@ -27,51 +31,32 @@ const LocalPageTtl = styled.h2`
     margin-bottom:0;
 `;
 
+
 export default function LocalFood(){
     return (
-    <StyledRecipes>
+    <LocalWrap>
         {/* <BgChange> */}
 
-        <HowToCatTtl>Local Food</HowToCatTtl>
+        <HowToCatTtl>Seasonal Food</HowToCatTtl>
 
-        <LocalCardCont>
-        <LocalPageTtl>5 ways of how to find local food</LocalPageTtl>
-            <LocalCard
-                img="/localfood/picup.jpg"
-                title="1. Pickup / Delivery"
-                paragraph="Services you can subscribe to pickup or get delivered local dish/food"
-                path="/pickup"
+        <Local_relatedpage_top
+                img="/localfood/4_seasonal_food/seasonalFood.jpg"
+                descTxt="How to figure out what food is in season in Canada"
             />
 
-            <LocalCard
-                img="/localfood/farmersMarkets.jpg"
-                title="2. Farmers&#39; Markets (VFM)"
-                paragraph="Farmers markets in Vancouver where you can buy local food"
-                path="/farmersMarket"
+        <LocalDetailItemCont>
+            <Local_detail_item
+                img="/localfood/2_vegan_logo/knowWhatToSupport.jpg"
+                bgc="#fff"
+                itemttl="1. Uber Eats"
+                itemurl="https://www.ubereats.com/ca/category/vancouver-bc/vegan"
+                itemheading="ー　Vegan Category"
+                itemtxt="There is a Vegan category"
             />
 
-            <LocalCard
-                img="/localfood/grocerystore.jpg"
-                title="3. Grocery Stores &amp; Markets"
-                paragraph="Grocery stores &amp; markets in Vancouver where you can buy local food."
-                path="/groceryStore"
-            />
+        </LocalDetailItemCont>
 
-            <LocalCard
-                img="/localfood/seafood.jpg"
-                title="4. Local Seafood"
-                paragraph="Places in Vancouver where you can buy local seafood"
-                path="/seafood"
-            />
-
-            <LocalCard
-                img="/localfood/farmToTable.jpg"
-                title="5. Farm-to-Table"
-                paragraph="Farm-to-table restaurants in Vancouver"
-                path="/farmToTable"
-            />
-        </LocalCardCont>
         <Navbar></Navbar>
-    </StyledRecipes>
+    </LocalWrap>
     )
 }
