@@ -3,6 +3,7 @@ import MainMenu from "../comps/MainMenu";
 import RecipeCard from "../comps/Recipes/RecipeCard";
 import TofuComp from "../comps/Recipes/TofuComp";
 import SideNav from "../comps/Navbar/SideNav";
+import TopBtn from "../comps/TopBtn";
 
 import styled from 'styled-components';
 
@@ -60,7 +61,8 @@ export default function Recipes(){
             top="1220px"
             />
         </BgChange>
-
+    
+    <TopBtn />
     <Navbar />
 
     </StyledRecipes>
