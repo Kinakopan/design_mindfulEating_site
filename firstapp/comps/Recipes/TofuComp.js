@@ -19,6 +19,7 @@ text-align:center;
 margin: 0;
 margin-left: auto;
 `;
+//;;;;;
 
 const Image = styled.img`
 top:310px;
