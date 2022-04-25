@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import ImgCard from '../comps/ImgCard';
 import Navbar from '../comps/Navbar';
+// import MainMenu from "../comps/MainMenu";
 import Questions from '../comps/Questions';
 
 import { useRouter } from 'next/router';
@@ -13,6 +14,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      {/* <MainMenu></MainMenu> */}
       <Head>
         <title>Mindful eating</title>
         <meta name="description" content="Mindful eating guide website" />
@@ -21,12 +23,12 @@ export default function Home() {
 
       <main>
 
-      <ImgCard 
+      <ImgCard
         img="/logo/horizontal_logo.png"
         bg="white"
       />
 
-      <ImgCard 
+      <ImgCard
       title="Mindful eating for you and us"
       bg="#E0E8FD"
       img="/food1.png"
@@ -36,7 +38,7 @@ export default function Home() {
 
     <br></br>
 
-      <Questions 
+      <Questions
       id="recipe" btName="want to cook" txt="I want to prepare healthy daily meals but don’t know what to cook" id2="restaurant" btName2="dont want to cook" txt2="I want to go vegan easily and healthfully but don’t want to cook"
       id3="localFood" btName3="want to buy" txt3="I want to buy organic ingredients but don't know where"></Questions>
 
@@ -58,7 +60,7 @@ export default function Home() {
       />
 
       <Navbar></Navbar>
-        
+
       </main>
     </div>
   )

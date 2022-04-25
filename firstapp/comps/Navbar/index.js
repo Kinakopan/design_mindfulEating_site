@@ -10,7 +10,9 @@ const NavBottom = styled.div`
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    padding: 1em;
+    // padding: 1em;
+    padding: 1em 1em 2em;
+    // ↑ For Verna's page otherwise a bit of top part will be hidden
     background-color: white;
 `;
 
@@ -21,6 +23,7 @@ const Button = styled.button`
     width: 40px;
     height: 40px;
     border: none;
+    cursor: pointer;
 `
 
 
