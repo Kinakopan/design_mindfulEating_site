@@ -1,4 +1,6 @@
 import Navbar from "../../../comps/Navbar";
+import MainMenu from "../../../comps/MainMenu";
+
 import Local_detail_top from "../../../comps/Localfood/LocalDetails";
 import Local_detail_item from "../../../comps/Localfood/LocalDetailItem";
 import styled from 'styled-components';
@@ -35,7 +37,7 @@ const LocalPageTtl = styled.h2`
 export default function LocalFood(){
     return (
     <LocalWrap>
-        {/* <BgChange> */}
+        <MainMenu></MainMenu>
 
         <HowToCatTtl>Local Food</HowToCatTtl>
 
