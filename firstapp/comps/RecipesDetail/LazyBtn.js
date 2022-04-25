@@ -26,7 +26,7 @@ margin-top:5px;
 export default function LazyBtn({
   img="/sofaIcon.png", 
   bg="red",
-  tcl="#FFF"//>>>>>>>>>>>>>>>>
+  tcl="#FFF"//>>>>>>>>>>>>>>>>...
 }){
 
   return <StyledLazyBtn color={bg} text_color={tcl}>
