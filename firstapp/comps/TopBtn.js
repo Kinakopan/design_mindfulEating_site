@@ -25,7 +25,7 @@ export default function TopBtn({
 
   const r = useRouter();
 
-  return <StyledTopBtn text_color={tcl} onClick = {()=>r.push("/Recipes")}>
+  return <StyledTopBtn text_color={tcl} onClick = {()=>r.push("/recipes")}>
     <Image src={img} />
     <Text>Top</Text>
   </StyledTopBtn>
