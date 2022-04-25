@@ -1,4 +1,5 @@
 import Navbar from "../../../comps/Navbar";
+import MainMenu from "../../../comps/MainMenu";
 import Local_relatedpage_top from "../../../comps/Localfood/LocalRelatedpageTop";
 import Local_detail_item from "../../../comps/Localfood/LocalDetailItem";
 import styled from 'styled-components';
@@ -35,7 +36,7 @@ const LocalPageTtl = styled.h2`
 export default function LocalFood(){
     return (
     <LocalWrap>
-        {/* <BgChange> */}
+        <MainMenu></MainMenu>
 
         <HowToCatTtl>Made in Canada</HowToCatTtl>
 
