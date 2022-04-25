@@ -7,6 +7,7 @@ const MainMenuCont = styled.div`
     display: flex;
     padding: 30px 50px;
     justify-content: space-between;
+    // justify-content: ${props=>props.sqrPosi};
     position: relative;
     // overflow: ${props => (props.active ? "visible" : "hidden")};
     // overflow: ${props=>props.overFlow};
@@ -23,6 +24,7 @@ const BackArrow = styled.div`
     background-size: 100%;
     background-image: url("/common/back.png");
     cursor: pointer;
+    display: ${props=>props.arrowDis};
 `
 
 const SqrCont = styled.div`
@@ -60,11 +62,13 @@ export default function MainMenu({
       // alert("hey");
     }
 
-    return <MainMenuCont id="MainMenuCont">
+    return <MainMenuCont id="MainMenuCont" sqrPosi="position">
 
-        <BackArrow aria-label="back" type="button" onClick = {
-            ()=>r.back()
-        }></BackArrow>
+        {
+          r.pathname === "/" ? "" : <BackArrow aria-label="back" type="button" onClick = {
+              ()=>r.back()
+          }></BackArrow>
+        }
 
         <SqrCont onClick = {
             // visibleToggle
