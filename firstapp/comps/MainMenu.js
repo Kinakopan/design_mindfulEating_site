@@ -1,4 +1,4 @@
-import styled, {css, keyframes} from "styled-components";
+import styled, {css} from "styled-components";
 import { useRouter } from 'next/router';
 import MainMenuActive from './MainMenu_act';
 
@@ -22,6 +22,7 @@ const BackArrow = styled.div`
     height: 40px;
     background-size: 100%;
     background-image: url("/common/back.png");
+    cursor: pointer;
 `
 
 const SqrCont = styled.div`

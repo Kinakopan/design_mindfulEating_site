@@ -1,3 +1,4 @@
+import MainMenu from "../comps/MainMenu";
 import ImgCard from "../comps/ImgCard";
 import RestaurantCard from "../comps/RestaurantCard";
 import Navbar from "../comps/Navbar";
@@ -5,20 +6,22 @@ import Navbar from "../comps/Navbar";
 
 
 export default function Restaurant(){
-    
-    return ( 
+
+    return (
     <div>
+            <MainMenu></MainMenu>
+
         <h1>Restaurant</h1>
 
-        <ImgCard 
+        <ImgCard
         img="/restaurant.png"
         bg="#E0E8FD"/>
 
-    
+
     <main>
         <RestaurantCard>
         </RestaurantCard>
-        
+
         <RestaurantCard
             img="/juice truck.png"
             h2="The Juice Truck"
@@ -49,14 +52,6 @@ export default function Restaurant(){
 
     </main>
     </div>
- 
+
     )
 }
-
-
- 
-  
-
-
-
-
