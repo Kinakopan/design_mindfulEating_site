@@ -2,11 +2,8 @@ import Navbar from "../comps/Navbar";
 import MainMenu from "../comps/MainMenu";
 import RecipeCard from "../comps/Recipes/RecipeCard";
 import TofuComp from "../comps/Recipes/TofuComp";
-<<<<<<< HEAD
-import SideNav from "../comps/Navbar/SideNav";
-=======
 import TopBtn from "../comps/TopBtn";
->>>>>>> fe0957a5bb17a5381c47be4ad614c06d802b99cb
+import SideNav from "../comps/Navbar/sideNav";
 
 import styled from 'styled-components';
 
@@ -38,22 +35,17 @@ export default function Recipes(){
         index2="Beans"
         index3="Grains"
         index4="Quinoa"
+        mar="0"
         ></SideNav>
 
         <TofuComp />
 
         <BgChange>
-<<<<<<< HEAD
-            <RecipeCard />
-
-            <RecipeCard
-=======
             <RecipeCard 
           
             />
             
             <RecipeCard 
->>>>>>> fe0957a5bb17a5381c47be4ad614c06d802b99cb
             img="/recipes2.png"
             title="Tofu Bibimbap"
             paragraph="Korean food with various vegetables mixed with rice."
@@ -69,21 +61,12 @@ export default function Recipes(){
             img="/recipes4.png"
             title="Mapo Tofu"
             paragraph="Spicy Sichuan style tofu dish with rice."
-<<<<<<< HEAD
-            top="1220px"
-            />
-        </BgChange>
-
-    <Navbar />
-
-=======
             />   
         </BgChange>
 
     <Navbar />
     <TopBtn />
         
->>>>>>> fe0957a5bb17a5381c47be4ad614c06d802b99cb
     </StyledRecipes>
     )
 }

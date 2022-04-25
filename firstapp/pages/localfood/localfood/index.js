@@ -42,7 +42,7 @@ export default function LocalFood(){
         index2="Vegan Logo"
         index3="Made in Canada"
         index4="Seasonal Food"
-        mar="5em 1em"
+        mar="1em 1em 0 1em"
         ></SideNav>
 
         <LocalCardCont>

@@ -7,11 +7,12 @@ const SideCont = styled.div`
   justify-content: space-around;
   flex-direction: column;
   position: fixed;
-  gap: 2em;
+  gap: 1em;
   margin: ${props=>props.margin}};
   z-index: 100;
   left: 0;
   transform: rotate(180deg);
+  height: 90vh;
   
 `;
 
@@ -20,6 +21,8 @@ const NavButton = styled.div`
   font-size: 1.2em;
   color: #A2B0D3;
   overflow-wrap: anywhere;
+  padding: 1em;
+
 `;
 
 export default function SideNav({
@@ -35,11 +38,13 @@ export default function SideNav({
   return <SideCont margin={mar}>
     
     <NavButton onClick = {
-      ()=>r.push("RecipesDetail")
+      ()=>r.push("/recipes")
     }>
     {index1}</NavButton>    
     
-    <NavButton>
+    <NavButton onClick = {
+      () => r.push("/")
+    }>
     {index2}</NavButton>    
     
     <NavButton>

@@ -4,11 +4,7 @@ import StepsBox from "../comps/RecipesDetail/StepsBox";
 import LazyBtn from "../comps/RecipesDetail/LazyBtn";
 import styled from 'styled-components';
 
-<<<<<<< HEAD
-export default function RecipesDetail(){
 
-  return <div>
-=======
 const StyledRecipesDetail = styled.div`
 background-color: #E0E8FD;
 display:flex;
@@ -26,12 +22,10 @@ overflow:hidden;
 `
 
 
-export default function RecipesDetail({
-  
-}){
+export default function RecipesDetail(){
     
   return <StyledRecipesDetail>
->>>>>>> fe0957a5bb17a5381c47be4ad614c06d802b99cb
+
       <h1>Tofu Bahn Mi</h1>
       <IngBox />
       <LazyBtn />
@@ -66,10 +60,7 @@ export default function RecipesDetail({
       </StySteps>
       
       <Navbar />
-<<<<<<< HEAD
-  </div>
-}
-=======
+
+
   </StyledRecipesDetail>
 }
->>>>>>> fe0957a5bb17a5381c47be4ad614c06d802b99cb
