@@ -1,8 +1,10 @@
 import Navbar from "../comps/Navbar";
 import RecipeCard from "../comps/Recipes/RecipeCard";
 import TofuComp from "../comps/Recipes/TofuComp";
+import TopBtn from "../comps/TopBtn";
 
 import styled from 'styled-components';
+
 
 const StyledRecipes = styled.div`
 
@@ -16,10 +18,10 @@ display:flex;
 flex-direction:column;
 align-items:end;
 `;
-//.....
 
 
 export default function Recipes(){
+    
     return (
     <StyledRecipes>
         <h1>Recipes</h1>
@@ -27,7 +29,9 @@ export default function Recipes(){
         <TofuComp />
 
         <BgChange>
-            <RecipeCard />
+            <RecipeCard 
+          
+            />
             
             <RecipeCard 
             img="/recipes2.png"
@@ -49,6 +53,7 @@ export default function Recipes(){
         </BgChange>
 
     <Navbar />
+    <TopBtn />
         
     </StyledRecipes>
     )

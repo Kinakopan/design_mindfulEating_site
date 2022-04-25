@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
 const StyledLazyBtn = styled.div`
 font-family: 'm plus 1', sans-serif;
@@ -29,7 +30,9 @@ export default function LazyBtn({
   tcl="#FFF"//>>>>>>>>>>>>>>>>...
 }){
 
-  return <StyledLazyBtn color={bg} text_color={tcl}>
+  const r = useRouter();
+
+  return <StyledLazyBtn color={bg} text_color={tcl} onClick = {()=>r.push("/Recipes")}>
     <Icon src={img} />
     <Text>Too lazy to cook?</Text>
   </StyledLazyBtn>

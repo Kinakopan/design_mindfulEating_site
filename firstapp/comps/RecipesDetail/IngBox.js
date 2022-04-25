@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
 const StyledIngBox = styled.div` 
 font-family: 'm plus 1', sans-serif;
@@ -51,6 +52,8 @@ export default function IngBox({
   img="/rectangle_18.png", 
   tcl="#08213E",
 }){
+  const r = useRouter()
+
   return <StyledIngBox text_color={tcl}>
   <ImageIng src={img} />
   <Box1>
@@ -70,9 +73,9 @@ export default function IngBox({
     </Box2_1>
 
     <Box2_2>
-      <CartBtn src="/cartBtn.png" />
-      <CartBtn src="/cartBtn.png" />
-      <CartBtn src="/cartBtn.png" />
+      <CartBtn src="/cartBtn.png" onClick = {()=>r.push("/Recipes")}/>
+      <CartBtn src="/cartBtn.png" onClick = {()=>r.push("/Recipes")}/>
+      <CartBtn src="/cartBtn.png" onClick = {()=>r.push("/Recipes")}/>
     </Box2_2>
   </Box2>
 

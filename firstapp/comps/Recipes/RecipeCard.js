@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
 const StyledCard = styled.div`
 font-family: 'm plus 1', sans-serif;
@@ -43,7 +44,9 @@ export default function RecipeCard({
   top="620px"
 }){
 
-  return <StyledCard text_color={tcl} top_prop={top}>
+  const r = useRouter();
+
+  return <StyledCard text_color={tcl} top_prop={top} onClick = {()=>r.push("../RecipesDetail")} >
     <Image src={img} />
 
     <ColumR>
