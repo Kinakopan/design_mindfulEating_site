@@ -2,6 +2,7 @@ import Navbar from "../comps/Navbar";
 import MainMenu from "../comps/MainMenu";
 import RecipeCard from "../comps/Recipes/RecipeCard";
 import TofuComp from "../comps/Recipes/TofuComp";
+import SideNav from "../comps/Navbar/SideNav";
 
 import styled from 'styled-components';
 
@@ -24,6 +25,14 @@ export default function Recipes(){
     <StyledRecipes>
         <MainMenu></MainMenu>
         <h1>Recipes</h1>
+
+        <SideNav 
+        bcl="#A2B0D3"
+        index1="Tofu"
+        index2="Beans"
+        index3="Grains"
+        index4="Quinoa"
+        ></SideNav>
 
         <TofuComp />
 

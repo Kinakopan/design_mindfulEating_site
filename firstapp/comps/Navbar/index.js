@@ -14,6 +14,7 @@ const NavBottom = styled.div`
     padding: 1em 1em 2em;
     // ↑ For Verna's page otherwise a bit of top part will be hidden
     background-color: white;
+    z-index: 101;
 `;
 
 const Button = styled.button`
@@ -39,7 +40,7 @@ export default function Navbar(){
             ()=>r.push("/restaurant")
         }></Button>
         <Button icon="/Logo/logo3.png" onClick = {
-            ()=>r.push("/recipes")
+            ()=>r.push("/localfood/localfood")
         }></Button>
     </NavBottom>
 }

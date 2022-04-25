@@ -1,7 +1,7 @@
-import Navbar from "../comps/Navbar";
 import MainMenu from "../comps/MainMenu";
 import ImgCard from "../comps/ImgCard";
 import RestaurantCard from "../comps/RestaurantCard";
+import Navbar from "../comps/Navbar";
 
 
 
@@ -45,10 +45,12 @@ export default function Restaurant(){
             h2="Tama Organic Life"
             txt="Organic shop selling fresh produce and Japanese specialty items. Its kitchen makes takeaway hot vegan lunch boxes, wraps and sandwiches."
         ></RestaurantCard>
+        
+        <br/>
 
+        <Navbar></Navbar>
 
     </main>
-    <Navbar />
     </div>
 
     )

@@ -2,6 +2,7 @@ import Navbar from "../../../comps/Navbar";
 import MainMenu from "../../../comps/MainMenu";
 import Local_card from "../../../comps/Localfood/LocalCard";
 import styled from 'styled-components';
+import SideNav from "../../../comps/Navbar/SideNav";
 
 const LocalWrap = styled.div`
     background: #E0E8FD;
@@ -34,6 +35,15 @@ export default function LocalFood(){
         <MainMenu></MainMenu>
 
         <HowToCatTtl>Local Food</HowToCatTtl>
+
+        <SideNav 
+        bcl="#A2B0D3"
+        index1="Local Food"
+        index2="Vegan Logo"
+        index3="Made in Canada"
+        index4="Seasonal Food"
+        mar="5em 1em"
+        ></SideNav>
 
         <LocalCardCont>
         <LocalPageTtl>5 ways of how to find local food</LocalPageTtl>
