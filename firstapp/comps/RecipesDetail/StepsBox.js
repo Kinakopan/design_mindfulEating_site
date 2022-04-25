@@ -32,6 +32,7 @@ margin-right:15px;
 const Image = styled.img`
 width:360px;
 `
+//00000
 
 export default function StepsBox({
   img="/rectangle_19.png", 
