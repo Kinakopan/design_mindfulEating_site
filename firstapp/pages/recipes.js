@@ -32,21 +32,18 @@ export default function Recipes(){
             img="/recipes2.png"
             title="Tofu Bibimbap"
             paragraph="Korean food with various vegetables mixed with rice."
-            top="820px"
             />
         
             <RecipeCard 
             img="/recipes3.png"
             title="Tofu Cutlet Curry"
             paragraph="Japanese curry that goes well with tofu cutlets."
-            top="1020px"
             />
 
             <RecipeCard 
             img="/recipes4.png"
             title="Mapo Tofu"
             paragraph="Spicy Sichuan style tofu dish with rice."
-            top="1220px"
             />   
         </BgChange>
 
