@@ -32,7 +32,7 @@ export default function Navbar(){
 
     return <NavBottom>
         <Button icon="/Logo/logo1.png" onClick = {
-            ()=>r.push("/recipes")
+            ()=>r.push("/Recipes")
         }></Button>
         <Button icon="/Logo/logo2.png" onClick = {
             ()=>r.push("/restaurant")

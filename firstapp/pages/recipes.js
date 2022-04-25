@@ -2,9 +2,14 @@ import Navbar from "../comps/Navbar";
 import MainMenu from "../comps/MainMenu";
 import RecipeCard from "../comps/Recipes/RecipeCard";
 import TofuComp from "../comps/Recipes/TofuComp";
+<<<<<<< HEAD
 import SideNav from "../comps/Navbar/SideNav";
+=======
+import TopBtn from "../comps/TopBtn";
+>>>>>>> fe0957a5bb17a5381c47be4ad614c06d802b99cb
 
 import styled from 'styled-components';
+
 
 const StyledRecipes = styled.div`
 
@@ -21,6 +26,7 @@ align-items:end;
 
 
 export default function Recipes(){
+    
     return (
     <StyledRecipes>
         <MainMenu></MainMenu>
@@ -37,32 +43,47 @@ export default function Recipes(){
         <TofuComp />
 
         <BgChange>
+<<<<<<< HEAD
             <RecipeCard />
 
             <RecipeCard
+=======
+            <RecipeCard 
+          
+            />
+            
+            <RecipeCard 
+>>>>>>> fe0957a5bb17a5381c47be4ad614c06d802b99cb
             img="/recipes2.png"
             title="Tofu Bibimbap"
             paragraph="Korean food with various vegetables mixed with rice."
-            top="820px"
             />
 
             <RecipeCard
             img="/recipes3.png"
             title="Tofu Cutlet Curry"
             paragraph="Japanese curry that goes well with tofu cutlets."
-            top="1020px"
             />
 
             <RecipeCard
             img="/recipes4.png"
             title="Mapo Tofu"
             paragraph="Spicy Sichuan style tofu dish with rice."
+<<<<<<< HEAD
             top="1220px"
             />
         </BgChange>
 
     <Navbar />
 
+=======
+            />   
+        </BgChange>
+
+    <Navbar />
+    <TopBtn />
+        
+>>>>>>> fe0957a5bb17a5381c47be4ad614c06d802b99cb
     </StyledRecipes>
     )
 }

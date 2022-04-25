@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
 const StyledTofuComp = styled.div`
 color:${props=>props.text_color};
@@ -19,6 +20,7 @@ text-align:center;
 margin: 0;
 margin-left: auto;
 `;
+//;;;;;
 
 const Image = styled.img`
 top:310px;
@@ -64,6 +66,8 @@ export default function TofuComp({
   tcl="#08213E",
 }){
 
+  const r = useRouter();
+
   return <StyledTofuComp text_color={tcl}>
     <IntroBox color={bgcl}>
       <h2>Tofu</h2>
@@ -72,7 +76,7 @@ export default function TofuComp({
 
     <Image src={img} />
 
-    <LinkBox>
+    <LinkBox onClick = {()=>r.push("/RecipesDetail")} >
       <BtnText>Get the fresh <Mark>tofu</Mark> at your local market</BtnText>
       <CartBtn src="/cartBtn.png" />
     </LinkBox>
