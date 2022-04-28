@@ -23,6 +23,7 @@ flex-direction:column;
 width:360px;
 border-radius:0px 20px 20px 0px;
 overflow:hidden;
+align-self:flex-start;
 `
 
 
