@@ -30,22 +30,35 @@ width:350px;
 `
 
 const Box2_1 = styled.ul`
-width:300px;
+width:220px;
 `
+
 const Box2_2 = styled.div`
 display:flex;
 flex-direction: column;
 margin-top:40px;
 `
 
+const Box2_3 = styled.div`
+display:flex;
+flex-direction: column;
+margin-top:50px;
+margin-left:10px;
+`
+const IconText = styled.p`
+color:#EF7F63;
+font-size:13px;
+margin-top:10px;
+`
 const Paragraph = styled.p`
 color:#878686;
 `
 
-const CartBtn = styled.img`
-height:30px;
-width:30px;
-margin:6px;
+const FindIcon = styled.img`
+height:25px;
+width:20px;
+margin-top:15px;
+margin-bottom:1px;
 `
 
 export default function IngBox({
@@ -73,10 +86,16 @@ export default function IngBox({
     </Box2_1>
 
     <Box2_2>
-      <CartBtn src="/cartBtn.png" onClick = {()=>r.push("/localfood/localfood/groceryStore")}/>
-      <CartBtn src="/cartBtn.png" onClick = {()=>r.push("/localfood/localfood/farmToTable")}/>
-      <CartBtn src="/cartBtn.png" onClick = {()=>r.push("/localfood/localfood/farmersMarket")}/>
+      <FindIcon src="/findIcon.png" onClick = {()=>r.push("/localfood/localfood/groceryStore")}/>
+      <FindIcon src="/findIcon.png" onClick = {()=>r.push("/localfood/localfood/farmToTable")}/>
+      <FindIcon src="/findIcon.png" onClick = {()=>r.push("/localfood/localfood/farmersMarket")}/>
     </Box2_2>
+
+    <Box2_3>
+      <IconText onClick = {()=>r.push("/localfood/localfood/groceryStore")}>Where to find</IconText>
+      <IconText onClick = {()=>r.push("/localfood/localfood/groceryStore")}>Where to find</IconText>
+      <IconText onClick = {()=>r.push("/localfood/localfood/groceryStore")}>Where to find</IconText>
+    </Box2_3>
   </Box2>
 
 </StyledIngBox>

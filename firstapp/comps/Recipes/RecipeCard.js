@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { useRouter } from 'next/router';
+import { useRouter} from 'next/router';
+import {imgDatebase,titleDatebase,paraDatebase} from '../../data/recipes_content';
 
 const StyledCard = styled.div`
 font-family: 'm plus 1', sans-serif;
@@ -9,6 +10,7 @@ display:flex;
 top:${props=>props.top_prop}; 
 right:10px;
 padding-top:40px;
+align-item: left;
 `;
 
 const Image = styled.img`
@@ -37,16 +39,15 @@ font-size:14px;
 
 
 export default function RecipeCard({
-  img="/recipes1.png", 
   tcl="#08213E",
-  title="Tofu Banh Mi",
-  paragraph="Vietnamese sandwich made of baguette.",
-  top="620px"
+  img="/recipes1.png", 
+  title = "Tofu Banh Mi",
+  paragraph = "Vietnamese sandwich made of baguette."
 }){
 
   const r = useRouter();
 
-  return <StyledCard text_color={tcl} top_prop={top} onClick = {()=>r.push("../RecipesDetail")} >
+  return <StyledCard text_color={tcl} onClick = {()=>r.push("../RecipesDetail")} >
     <Image src={img} />
 
     <ColumR>

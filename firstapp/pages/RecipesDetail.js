@@ -5,6 +5,7 @@ import LazyBtn from "../comps/RecipesDetail/LazyBtn";
 import MainMenu from "../comps/MainMenu";
 import SideNav from "../comps/Navbar/SideNav";
 import TopBtn from "../comps/TopBtn";
+import {numDatebase,textDatebase} from"../data/rcpSteps_content";
 
 import styled from 'styled-components';
 
@@ -26,6 +27,13 @@ overflow:hidden;
 align-self:flex-start;
 `
 
+const Header = styled.h1`
+display:flex;
+flex-direction:row;
+align-self:flex-start;
+margin-left:50px;
+`
+
 
 export default function RecipesDetail({
   
@@ -33,7 +41,7 @@ export default function RecipesDetail({
     
   return <StyledRecipesDetail>
       <MainMenu></MainMenu>
-      <h1>Tofu Bahn Mi</h1>
+      <Header>Tofu Bahn Mi</Header>
       <SideNav 
         bcl="#A2B0D3"
         index1="Tofu"
@@ -46,31 +54,33 @@ export default function RecipesDetail({
       <LazyBtn />
 
       <StySteps>
+        <StepsBox
+        number={numDatebase[0]} 
+        text={textDatebase[0]}
+        img=""
+        />
+
+        <StepsBox
+        number={numDatebase[1]} 
+        text={textDatebase[1]}
+        img=""
+        />
+
+        <StepsBox
+        number={numDatebase[2]} 
+        text={textDatebase[2]}
+        img=""
+        />
+
         <StepsBox 
+        number={numDatebase[3]} 
+        text={textDatebase[3]}
         img=""
         />
 
         <StepsBox
-        number="2"
-        text="Make vegetable pickles: Mix chopped carrots, radishes, onions,a cup of rice vinegar, 3 spoons of maple syrup, and 2 teaspoons of salt in a bowl."
-        img=""
-        />
-
-        <StepsBox
-        number="3"
-        text="Make marinade: 1/4 cup soy sauce, 2 teaspoons sesame oil, 2 teaspoons maple syrup, 3 cloves of garlic, 3 inches of lemon gras, 1/2 inch ginger, 1/3 cup coriander, 3/4 teaspoons of salt and black pepper, and mix until smooth."
-        img=""
-        />
-
-        <StepsBox 
-        number="4"
-        text="Heat the oil in a large pot and  cook the tofu for about 3 minutes per side until golden. Then put the baked tofu back in the sauce for about 10 minutes."
-        img=""
-        />
-
-        <StepsBox
-        number="5"
-        text="To assemble: Spread baguettes with spicy mayo. Top with tofu, cilantro, basil, pickled vegetables (shaking off pickling liquid first), cucumber, and jalapeños."
+        number={numDatebase[4]} 
+        text={textDatebase[4]}
         />
       </StySteps>
       

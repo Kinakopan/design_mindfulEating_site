@@ -4,6 +4,8 @@ import RecipeCard from "../comps/Recipes/RecipeCard";
 import TofuComp from "../comps/Recipes/TofuComp";
 import SideNav from "../comps/Navbar/SideNav";
 import TopBtn from "../comps/TopBtn";
+import {imgDatebase,titleDatebase,paraDatebase} from '../data/recipes_content';
+
 
 import styled from 'styled-components';
 
@@ -38,27 +40,28 @@ export default function Recipes(){
         <TofuComp />
 
         <BgChange>
-            <RecipeCard />
-
-            <RecipeCard
-            img="/recipes2.png"
-            title="Tofu Bibimbap"
-            paragraph="Korean food with various vegetables mixed with rice."
-            top="820px"
+            <RecipeCard 
+            img={imgDatebase[0]}
+            title={titleDatebase[0]}
+            paragraph={paraDatebase[0]}
             />
 
             <RecipeCard
-            img="/recipes3.png"
-            title="Tofu Cutlet Curry"
-            paragraph="Japanese curry that goes well with tofu cutlets."
-            top="1020px"
+            img={imgDatebase[1]}
+            title={titleDatebase[1]}
+            paragraph={paraDatebase[1]}
             />
 
             <RecipeCard
-            img="/recipes4.png"
-            title="Mapo Tofu"
-            paragraph="Spicy Sichuan style tofu dish with rice."
-            top="1220px"
+            img={imgDatebase[2]}
+            title={titleDatebase[2]}
+            paragraph={paraDatebase[2]}
+            />
+
+            <RecipeCard
+            img={imgDatebase[3]}
+            title={titleDatebase[3]}
+            paragraph={paraDatebase[3]}
             />
         </BgChange>
     
