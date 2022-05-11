@@ -6,6 +6,7 @@ import ImgCard from '../comps/ImgCard';
 import Navbar from '../comps/Navbar';
 // import MainMenu from "../comps/MainMenu";
 import Questions from '../comps/Questions';
+import TopBtn from '../comps/TopBtn';
 
 import { useRouter } from 'next/router';
 
@@ -67,6 +68,8 @@ export default function Home() {
         n4="Verna Mai"
         txt="There are various ways to keep the health of the Earth sustainable while protecting our health. However, instead of suddenly stopping us from eating meat, we created this website to suggest a delicious and easy way to practice."
       />
+
+      <TopBtn />
 
       <Navbar></Navbar>
 
