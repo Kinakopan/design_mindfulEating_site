@@ -64,6 +64,10 @@ margin-bottom:1px;
 export default function IngBox({
   img="/rectangle_18.png", 
   tcl="#08213E",
+  common="Tofu, 1 carrot, 1 daikon, 1/2 onion,  mayonnaise, Sriracha, 3 cloves garlic,  cilantro, baguette",
+  rare1="Rice vinegar",
+  rare2="Lemongrass",
+  rare3="2 jalapenos"
 }){
   const r = useRouter()
 
@@ -73,16 +77,16 @@ export default function IngBox({
     <h3>Ingredients</h3>
     <ul>
       <li>Common ingredients</li>
-      <Paragraph>Tofu, 1 carrot, 1 daikon, 1/2 onion,  mayonnaise, Sriracha, 3 cloves garlic,  cilantro, baguette</Paragraph>
+      <Paragraph>{common}</Paragraph>
     </ul>
   </Box1>
 
   <Box2>
     <Box2_1>
       <li>Rare ingredients</li>
-      <Paragraph>Rice vinegar</Paragraph>
-      <Paragraph>Lemongrass</Paragraph>
-      <Paragraph>2 jalapenos</Paragraph>
+      <Paragraph>{rare1}</Paragraph>
+      <Paragraph>{rare2}</Paragraph>
+      <Paragraph>{rare3}</Paragraph>
     </Box2_1>
 
     <Box2_2>

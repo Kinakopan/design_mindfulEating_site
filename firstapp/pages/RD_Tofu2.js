@@ -5,7 +5,7 @@ import LazyBtn from "../comps/RecipesDetail/LazyBtn";
 import MainMenu from "../comps/MainMenu";
 import SideNav from "../comps/Navbar/SideNav";
 import TopBtn from "../comps/TopBtn";
-import {numDatebase,textDatebase} from"../data/rcpSteps_content";
+import {numDatebase,tofu2Datebase} from"../data/rcpSteps_content";
 
 import styled from 'styled-components';
 
@@ -41,7 +41,7 @@ export default function RecipesDetail({
     
   return <StyledRecipesDetail>
       <MainMenu></MainMenu>
-      <Header>Tofu Bahn Mi</Header>
+      <Header>Tofu Bibimbap</Header>
       <SideNav 
         bcl="#A2B0D3"
         index1="Tofu"
@@ -56,35 +56,34 @@ export default function RecipesDetail({
       <StySteps>
         <StepsBox
         number={numDatebase[0]} 
-        text={textDatebase[0]}
+        text={tofu1Datebase[0]}
         img=""
         />
 
         <StepsBox
         number={numDatebase[1]} 
-        text={textDatebase[1]}
+        text={tofu1Datebase[1]}
         img=""
         />
 
         <StepsBox
         number={numDatebase[2]} 
-        text={textDatebase[2]}
+        text={tofu1Datebase[2]}
         img=""
         />
 
         <StepsBox 
         number={numDatebase[3]} 
-        text={textDatebase[3]}
+        text={tofu1Datebase[3]}
         img=""
         />
 
         <StepsBox
         number={numDatebase[4]} 
-        text={textDatebase[4]}
+        text={tofu1Datebase[4]}
         />
       </StySteps>
       
       <TopBtn />
       <Navbar />
   </StyledRecipesDetail>
-}

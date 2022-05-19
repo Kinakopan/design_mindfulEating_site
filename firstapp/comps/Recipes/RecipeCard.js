@@ -47,7 +47,7 @@ export default function RecipeCard({
 
   const r = useRouter();
 
-  return <StyledCard text_color={tcl} onClick = {()=>r.push("../RecipesDetail")} >
+  return <StyledCard text_color={tcl} onClick = {()=>r.push("../RecipesDetail_Tofu1")} >
     <Image src={img} />
 
     <ColumR>

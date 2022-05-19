@@ -50,6 +50,7 @@ export default function Recipes(){
             img={imgDatebase[1]}
             title={titleDatebase[1]}
             paragraph={paraDatebase[1]}
+            onClick={()=>r.push("../RD_Tofu2")}
             />
 
             <RecipeCard
