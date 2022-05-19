@@ -7,7 +7,7 @@ display:flex;
 flex-direction: column;
 color:${props=>props.text_color};
 background-color: #ffffff;
-border-radius:20px 0px 0px 0px;
+border-radius:20px 0px 0px 20px;
 width:360px;
 `;
 
@@ -64,10 +64,10 @@ margin-bottom:1px;
 export default function IngBox({
   img="/rectangle_18.png", 
   tcl="#08213E",
-  common="Tofu, 1 carrot, 1 daikon, 1/2 onion,  mayonnaise, Sriracha, 3 cloves garlic,  cilantro, baguette",
-  rare1="Rice vinegar",
-  rare2="Lemongrass",
-  rare3="2 jalapenos"
+  common="",
+  rare1="",
+  rare2="",
+  rare3=""
 }){
   const r = useRouter()
 
