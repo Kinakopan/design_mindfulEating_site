@@ -16,7 +16,7 @@ const StyledRecipes = styled.div`
 const BgChange = styled.div`
 background-color: #E0E8FD;
 display: block;
-height: 120vh;
+height: 90vh;
 display:flex;
 flex-direction:column;
 align-items:end;
@@ -54,16 +54,12 @@ export default function Recipes(){
             />
 
             <RecipeCard
-            img={imgDatebase[2]}
-            title={titleDatebase[2]}
-            paragraph={paraDatebase[2]}
-            />
-
-            <RecipeCard
             img={imgDatebase[3]}
             title={titleDatebase[3]}
             paragraph={paraDatebase[3]}
+            path="../RD_Tofu3"
             />
+
         </BgChange>
     
     <TopBtn />

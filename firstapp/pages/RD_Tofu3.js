@@ -43,7 +43,7 @@ export default function RecipesDetail({
     
   return <StyledRecipesDetail>
       <MainMenu></MainMenu>
-      <Header>Tofu Bibimbap</Header>
+      <Header>Mapo Tofu</Header>
       <SideNav 
         bcl="#A2B0D3"
         index1="Tofu"
@@ -53,43 +53,43 @@ export default function RecipesDetail({
         ></SideNav>
 
       <IngBox 
-      img="/bibimbap.png"
-      common={commDatabase[1]}
-      rare1="Gochujang"
-      rare2="Sesame Seeds"
-      rare3="Sesame Oil"
+      img="/Mapo3.jpeg"
+      common={commDatabase[2]}
+      rare1="Silken tofu"
+      rare2="Sichuan peppercorns"
+      rare3="Sermented chili bean paste"
       />
       <LazyBtn />
 
       <StySteps>
         <StepsBox
         number={numDatabase[0]} 
-        text={tofuDatabase[0]}
+        text={tofuDatabase[5]}
         img=""
         />
 
         <StepsBox
         number={numDatabase[1]} 
-        text={tofuDatabase[1]}
+        text={tofuDatabase[6]}
         img=""
         />
 
         <StepsBox
         number={numDatabase[2]} 
-        text={tofuDatabase[2]}
+        text={tofuDatabase[7]}
         img=""
         />
 
         <StepsBox 
         number={numDatabase[3]} 
-        text={tofuDatabase[3]}
+        text={tofuDatabase[8]}
         img=""
         />
 
         <StepsBox
         number={numDatabase[4]} 
-        text={tofuDatabase[4]}
-        img="/Bibimbap2.jpeg"
+        text={tofuDatabase[9]}
+        img="/recipes4.png"
         />
       </StySteps>
       <TopBtn />
