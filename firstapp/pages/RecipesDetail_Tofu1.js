@@ -6,6 +6,7 @@ import MainMenu from "../comps/MainMenu";
 import SideNav from "../comps/Navbar/SideNav";
 import TopBtn from "../comps/TopBtn";
 import {numDatebase,tofu1Datebase} from"../data/rcpSteps_content";
+import {commDatabase} from "../data/common_content";
 
 import styled from 'styled-components';
 
@@ -50,7 +51,13 @@ export default function RecipesDetail({
         index4="Quinoa"
         ></SideNav>
 
-      <IngBox />
+      <IngBox 
+      common={commDatabase[0]}
+      rare1="Rice vinegar"
+      rare2="Lemongrass"
+      rare3="2 jalapenos"
+      />
+
       <LazyBtn />
 
       <StySteps>

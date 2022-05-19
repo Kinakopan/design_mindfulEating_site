@@ -5,7 +5,9 @@ import LazyBtn from "../comps/RecipesDetail/LazyBtn";
 import MainMenu from "../comps/MainMenu";
 import SideNav from "../comps/Navbar/SideNav";
 import TopBtn from "../comps/TopBtn";
-import {numDatebase,tofu2Datebase} from"../data/rcpSteps_content";
+import {numDatabase,tofu2Database} from"../data/tofu2_content";
+import {commDatabase} from "../data/common_content";
+
 
 import styled from 'styled-components';
 
@@ -50,40 +52,47 @@ export default function RecipesDetail({
         index4="Quinoa"
         ></SideNav>
 
-      <IngBox />
+      <IngBox 
+      img="/bibimbap.png"
+      common={commDatabase[1]}
+      rare1="Gochujang"
+      rare2="Sesame Seeds"
+      rare3="Sesame Oil"
+      />
       <LazyBtn />
 
       <StySteps>
         <StepsBox
-        number={numDatebase[0]} 
-        text={tofu1Datebase[0]}
+        number={numDatabase[0]} 
+        text={tofu2Database[0]}
         img=""
         />
 
         <StepsBox
-        number={numDatebase[1]} 
-        text={tofu1Datebase[1]}
+        number={numDatabase[1]} 
+        text={tofu2Database[1]}
         img=""
         />
 
         <StepsBox
-        number={numDatebase[2]} 
-        text={tofu1Datebase[2]}
+        number={numDatabase[2]} 
+        text={tofu2Database[2]}
         img=""
         />
 
         <StepsBox 
-        number={numDatebase[3]} 
-        text={tofu1Datebase[3]}
+        number={numDatabase[3]} 
+        text={tofu2Database[3]}
         img=""
         />
 
         <StepsBox
-        number={numDatebase[4]} 
-        text={tofu1Datebase[4]}
+        number={numDatabase[4]} 
+        text={tofu2Database[4]}
+        img="/Bibimbap2.jpeg"
         />
       </StySteps>
-      
       <TopBtn />
       <Navbar />
   </StyledRecipesDetail>
+  }

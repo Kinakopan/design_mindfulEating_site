@@ -42,12 +42,13 @@ export default function RecipeCard({
   tcl="#08213E",
   img="/recipes1.png", 
   title = "Tofu Banh Mi",
-  paragraph = "Vietnamese sandwich made of baguette."
+  paragraph = "Vietnamese sandwich made of baguette.",
+  path="/RecipesDetail_Tofu1"
 }){
 
   const r = useRouter();
 
-  return <StyledCard text_color={tcl} onClick = {()=>r.push("../RecipesDetail_Tofu1")} >
+  return <StyledCard text_color={tcl} onClick = {()=>r.push({pathname:"" + String(path)})} >
     <Image src={img} />
 
     <ColumR>
