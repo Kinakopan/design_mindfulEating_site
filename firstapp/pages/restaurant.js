@@ -48,7 +48,9 @@ export default function Restaurant(){
         
         <br/>
 
-        <Navbar></Navbar>
+        <Navbar 
+        img2="/active_logo2.png"
+        />
 
     </main>
     </div>

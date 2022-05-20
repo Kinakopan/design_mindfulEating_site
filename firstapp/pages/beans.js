@@ -66,7 +66,9 @@ export default function Recipes(){
         </BgChange>
     
     <TopBtn />
-    <Navbar />
+    <Navbar 
+    img1="/active_logo1.png"
+    />
 
     </StyledRecipes>
     )

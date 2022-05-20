@@ -74,7 +74,9 @@ export default function LocalFood(){
 
         </LocalDetailItemCont>
 
-        <Navbar></Navbar>
+        <Navbar 
+        img3="/active_logo3.png"
+        />
     </LocalWrap>
     )
 }

@@ -25,22 +25,27 @@ const Button = styled.button`
 `
 
 
-export default function Navbar(){
+export default function Navbar({
+    img0="/logo0.png",
+    img1="/logo1.png",
+    img2="/logo2.png",
+    img3="/logo3.png"
+}){
 
     const r = useRouter();
 
     return <NavBottom>
-        <Button icon="/logo0.png" onClick = {
+        <Button icon={img0} onClick = {
             ()=>r.push("/")
         }></Button>
 
-        <Button icon="/logo1.png" onClick = {
+        <Button icon={img1} onClick = {
             ()=>r.push("/recipes")
         }></Button>
-        <Button icon="/logo2.png" onClick = {
+        <Button icon={img2} onClick = {
             ()=>r.push("/restaurant")
         }></Button>
-        <Button icon="/logo3.png" onClick = {
+        <Button icon={img3} onClick = {
             ()=>r.push("/localfood/localfood")
         }></Button>
     </NavBottom>

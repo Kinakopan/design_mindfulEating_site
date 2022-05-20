@@ -93,6 +93,9 @@ export default function RecipesDetail({
         />
       </StySteps>
       <TopBtn />
-      <Navbar />
+      <Navbar 
+      img1="/active_logo1.png"
+      />
+      
   </StyledRecipesDetail>
   }
