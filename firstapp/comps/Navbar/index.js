@@ -19,7 +19,7 @@ const Button = styled.button`
     background-color: white;
     background-size: cover;
     width: 25%;
-    height: 70px;
+    height: 80px;
     border: none;
     cursor: pointer;
 `
