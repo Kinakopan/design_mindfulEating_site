@@ -38,7 +38,10 @@ export default function Questions({
 
   return <Cont>
     <div>
-    <input type="radio" id={id} name="radio button" value={txt}/>
+    <input type="radio" id={id} name="radio button" value={txt} onClick =
+    {
+      ()=>r.push("/recipes")
+    }/>
     <label for={id}>{txt}</label>
     </div>
 
@@ -56,13 +59,16 @@ export default function Questions({
     <br/>
 
     <div>
-    <input type="radio" id={id3} name="radio button" value={txt3}/>
+    <input type="radio" id={id3} name="radio button" value={txt3} onClick =
+    {
+      ()=>r.push("/localfood/localfood")
+    }/>
     <label for={id3}>{txt3}</label>
     </div>
 
 
     <br /> 
-    <Button type='submit'>GO</Button>
+    {/* <Button type='submit'>GO</Button> */}
 
 
 
