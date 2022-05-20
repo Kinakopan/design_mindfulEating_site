@@ -69,7 +69,9 @@ export default function Home() {
 
       <TopBtn />
 
-      <Navbar></Navbar>
+      <Navbar 
+      img0="/active_logo0.png"
+      />
 
       </main>
     </div>

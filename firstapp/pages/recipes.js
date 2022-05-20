@@ -4,7 +4,7 @@ import RecipeCard from "../comps/Recipes/RecipeCard";
 import TofuComp from "../comps/Recipes/TofuComp";
 import SideNav from "../comps/Navbar/SideNav";
 import TopBtn from "../comps/TopBtn";
-import {imgDatebase,titleDatebase,paraDatebase} from '../data/recipes_content';
+import {imgDatabase,titleDatabase,paraDatabase} from '../data/recipes_content';
 
 
 import styled from 'styled-components';
@@ -41,29 +41,31 @@ export default function Recipes(){
 
         <BgChange>
             <RecipeCard 
-            img={imgDatebase[0]}
-            title={titleDatebase[0]}
-            paragraph={paraDatebase[0]}
+            img={imgDatabase[0]}
+            title={titleDatabase[0]}
+            paragraph={paraDatabase[0]}
             />
 
             <RecipeCard
-            img={imgDatebase[1]}
-            title={titleDatebase[1]}
-            paragraph={paraDatebase[1]}
+            img={imgDatabase[1]}
+            title={titleDatabase[1]}
+            paragraph={paraDatabase[1]}
             path="../RD_Tofu2"
             />
 
             <RecipeCard
-            img={imgDatebase[3]}
-            title={titleDatebase[3]}
-            paragraph={paraDatebase[3]}
+            img={imgDatabase[3]}
+            title={titleDatabase[3]}
+            paragraph={paraDatabase[3]}
             path="../RD_Tofu3"
             />
 
         </BgChange>
     
     <TopBtn />
-    <Navbar />
+    <Navbar 
+    img1="/active_logo1.png"
+    />
 
     </StyledRecipes>
     )
