@@ -22,7 +22,7 @@ const Button = styled.button`
     height: 80px;
     border: none;
     cursor: pointer;
-`
+`;
 
 
 export default function Navbar({

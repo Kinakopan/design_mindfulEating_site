@@ -50,17 +50,17 @@ const BtnText = styled.p`
 right:35px;
 top:40px;
 color:#A2B0D3;
-`
+`;
 
 const CartBtn = styled.img`
 top:310px;
 height:35px;
 width:35px;
-`
+`;
 
 const Mark = styled.a`
 color:#EF7F63
-`
+`;
 
 export default function TofuComp({
   img="/tofu.png", 
