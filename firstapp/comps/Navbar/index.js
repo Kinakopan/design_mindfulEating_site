@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 
 
 const NavBottom = styled.div`
-    width: 100vw;
     height: fit-content;
     display: flex;
     justify-content: space-around;
@@ -18,9 +17,9 @@ const NavBottom = styled.div`
 const Button = styled.button`
     background-image: url("${props=>props.icon}");
     background-color: white;
-    background-size: 100% 100%;
-    width: 40px;
-    height: 40px;
+    background-size: cover;
+    width: 25%;
+    height: 70px;
     border: none;
     cursor: pointer;
 `
@@ -31,13 +30,17 @@ export default function Navbar(){
     const r = useRouter();
 
     return <NavBottom>
-        <Button icon="/Logo/logo1.png" onClick = {
+        <Button icon="/logo0.png" onClick = {
+            ()=>r.push("/")
+        }></Button>
+
+        <Button icon="/logo1.png" onClick = {
             ()=>r.push("/recipes")
         }></Button>
-        <Button icon="/Logo/logo2.png" onClick = {
+        <Button icon="/logo2.png" onClick = {
             ()=>r.push("/restaurant")
         }></Button>
-        <Button icon="/Logo/logo3.png" onClick = {
+        <Button icon="/logo3.png" onClick = {
             ()=>r.push("/localfood/localfood")
         }></Button>
     </NavBottom>

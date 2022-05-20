@@ -40,7 +40,7 @@ export default function SideNav({
     {index1}</NavButton>    
     
     <NavButton onClick = {
-      ()=>r.push("vegan_logo")
+      ()=>r.push("beans")
     }>
     {index2}</NavButton>    
     

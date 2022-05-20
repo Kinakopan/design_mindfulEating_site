@@ -28,6 +28,8 @@ height:250px;
 width:250px;
 margin-top: -20px;
 margin-right: 80px;
+border-radius: 25px;
+
 `;
 
 const LinkBox = styled(StyledTofuComp)`
@@ -64,20 +66,22 @@ export default function TofuComp({
   img="/tofu.png", 
   bgcl="#E0E8FD",
   tcl="#08213E",
+  h2="Tofu",
+  p="Tofu is an excellent source of protein in fact, it is a rare vegan choice that is a complete source of protein, which means it contains all nine amino acids",
 }){
 
   const r = useRouter();
 
   return <StyledTofuComp text_color={tcl}>
     <IntroBox color={bgcl}>
-      <h2>Tofu</h2>
-      <p>Tofu is an excellent source of protein in fact, it is a rare vegan choice that is a complete source of protein, which means it contains all nine amino acids</p>
+      <h2>{h2}</h2>
+      <p>{p}</p>
     </IntroBox>
 
     <Image src={img} />
 
     <LinkBox onClick = {()=>r.push("/localfood/localfood")} >
-      <BtnText>Get the fresh <Mark>tofu</Mark> at your local market</BtnText>
+      <BtnText>Get the fresh <Mark>{h2}</Mark> at your local market</BtnText>
       <CartBtn src="/cartBtn.png" />
     </LinkBox>
 

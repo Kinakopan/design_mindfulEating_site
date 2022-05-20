@@ -16,8 +16,6 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      {/* <MainMenu></MainMenu> */}
-      <MainMenu></MainMenu>
       <Head>
         <title>Mindful eating</title>
         <meta name="description" content="Mindful eating guide website" />
