@@ -7,7 +7,7 @@ export const imgDatabase = [
 export const titleDatabase = [
   "Chickpea Tikka Masala",
   "Black Bean Tacos",
-  "Instant Pot Chickpeas"  
+  "Instant Pot Chickpeas"
 ]
 
 export const paraDatabase = [

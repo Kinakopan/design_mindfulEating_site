@@ -5,17 +5,15 @@ import LazyBtn from "../comps/RecipesDetail/LazyBtn";
 import MainMenu from "../comps/MainMenu";
 import SideNav from "../comps/Navbar/SideNav";
 import TopBtn from "../comps/TopBtn";
-import {numDatebase,tofu1Datebase} from"../data/rcpSteps_content";
+import {numDatabase,tofuDatabase} from"../data/tofu_content";
 import {commDatabase} from "../data/common_content";
+
 
 import styled from 'styled-components';
 
 
 const StyledRecipesDetail = styled.div`
 background-color: #E0E8FD;
-`
-
-const Container = styled.div`
 display:flex;
 flex-direction:column;
 align-items:end;
@@ -43,11 +41,9 @@ export default function RecipesDetail({
   
 }){
     
-  return (
-  <StyledRecipesDetail>
-    <Container>
+  return <StyledRecipesDetail>
       <MainMenu></MainMenu>
-      <Header>Tofu Bahn Mi</Header>
+      <Header>Tofu Bibimbap</Header>
       <SideNav 
         bcl="#A2B0D3"
         index1="Tofu"
@@ -57,50 +53,46 @@ export default function RecipesDetail({
         ></SideNav>
 
       <IngBox 
-      common={commDatabase[0]}
-      rare1="Rice vinegar"
-      rare2="Lemongrass"
-      rare3="2 jalapenos"
+      img="/bibimbap.png"
+      common={commDatabase[1]}
+      rare1="Gochujang"
+      rare2="Sesame Seeds"
+      rare3="Sesame Oil"
       />
-
       <LazyBtn />
 
       <StySteps>
         <StepsBox
-        number={numDatebase[0]} 
-        text={tofu1Datebase[0]}
+        number={numDatabase[0]} 
+        text={tofuDatabase[0]}
         img=""
         />
 
         <StepsBox
-        number={numDatebase[1]} 
-        text={tofu1Datebase[1]}
+        number={numDatabase[1]} 
+        text={tofuDatabase[1]}
         img=""
         />
 
         <StepsBox
-        number={numDatebase[2]} 
-        text={tofu1Datebase[2]}
+        number={numDatabase[2]} 
+        text={tofuDatabase[2]}
         img=""
         />
 
         <StepsBox 
-        number={numDatebase[3]} 
-        text={tofu1Datebase[3]}
+        number={numDatabase[3]} 
+        text={tofuDatabase[3]}
         img=""
         />
 
         <StepsBox
-        number={numDatebase[4]} 
-        text={tofu1Datebase[4]}
+        number={numDatabase[4]} 
+        text={tofuDatabase[4]}
+        img="/Bibimbap2.jpeg"
         />
       </StySteps>
-
-    </Container>
-    
       <TopBtn />
       <Navbar />
-      
   </StyledRecipesDetail>
-  )
-}
+  }
